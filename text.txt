@@ -1,0 +1,30 @@
+Suppose we want to print string
+
+main(){
+ 
+char s[10]={'R','I','S','H','\0'}; //\0 THIS IS null character which we have to give at last of every string
+//suppose we want to print that arry string
+for(i=0; s[i]!='\0'; i++)
+   printf("%c",s[i]); //this loop run since we got null character
+or we can use
+printf("%s",s); %s helps to print whole string present in array without useing any loop
+or we can use
+puts(s); // this works same as print and also give new line
+getch();
+
+}
+
+
+Suppose we want to enter name from user
+main(){
+
+char s[20];
+int i;
+printf("enetr the name");
+   gets(s) //this is use to strore string in array and it will not take space aas end
+puts(&s[0]);
+        
+}
+
+gets()- it is a fun which address of first block of array to perform operation . So passing the array name (s) indicates we are passing first block address.
+get(s)==get(&s[0]);
